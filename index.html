@@ -712,14 +712,14 @@ body {
     <div class="partner-card" style="background:var(--bg-card);border:1px solid var(--border);border-radius:4px;padding:18px 16px">
       <div style="font-family:var(--font-display);font-size:15px;color:var(--accent-gold);margin-bottom:6px">内容合作方</div>
       <div style="font-size:11px;color:var(--text-secondary);margin-bottom:10px">财经媒体 · 投教机构 · 行业研究</div>
-      <div style="font-size:12px;color:var(--text-primary);line-height:1.6">匹配阶段：<span style="color:#2a6b8a">① 认知激发</span></div>
+      <div style="font-size:12px;color:var(--text-primary);line-height:1.6">匹配阶段：<span style="color:#2a6b8a">② 意向形成</span></div>
       <div style="font-size:11px;color:var(--text-secondary);margin-top:4px">价值：专业金融知识补位，降低客户决策不确定性</div>
       <div style="margin-top:10px;padding:4px 8px;background:rgba(200,164,92,0.1);border-radius:2px;font-size:10px;color:var(--accent-gold);display:inline-block">最优先引入</div>
     </div>
     <div class="partner-card" style="background:var(--bg-card);border:1px solid var(--border);border-radius:4px;padding:18px 16px">
       <div style="font-family:var(--font-display);font-size:15px;color:var(--accent-gold);margin-bottom:6px">场景合作方</div>
       <div style="font-size:11px;color:var(--text-secondary);margin-bottom:10px">本地生活 · 出行平台 · 电商</div>
-      <div style="font-size:12px;color:var(--text-primary);line-height:1.6">匹配阶段：<span style="color:#2a6b8a">② 意向形成</span></div>
+      <div style="font-size:12px;color:var(--text-primary);line-height:1.6">匹配阶段：<span style="color:#2a6b8a">① 认知激发</span></div>
       <div style="font-size:11px;color:var(--text-secondary);margin-top:4px">价值：高频场景自然触发金融服务，突破MAU天花板</div>
       <div style="margin-top:10px;padding:4px 8px;background:rgba(42,107,138,0.15);border-radius:2px;font-size:10px;color:#4a9bb8;display:inline-block">次优先推进</div>
     </div>
@@ -1216,8 +1216,8 @@ window.addEventListener('scroll', updateActiveNav, { passive: true });
 (function initSankey() {
   function getLinkReason(src, tgt) {
     const reasons = {
-      '内容合作方→① 认知激发': '专业知识补位降低决策不确定性，匹配客户"了解"阶段核心痛点',
-      '场景合作方→② 意向形成': '高频生活场景自然触发金融服务需求，打破"低频孤岛"',
+      '内容合作方→② 意向形成': '专业知识补位降低决策不确定性，匹配客户"了解"阶段核心痛点',
+      '场景合作方→① 认知激发': '高频生活场景自然触发金融服务需求，打破"低频孤岛"',
       '产品合作方→③ 决策转化': '多元产品选择满足配置需求，丰富货架效应',
       '产品合作方→④ 持有管理': '产品到期续接与交叉销售，延长客户持有周期',
       '权益合作方→⑤ 关系深化': '跨界增值体验形成不可替代的价值锁定'
@@ -1239,8 +1239,8 @@ window.addEventListener('scroll', updateActiveNav, { passive: true });
       { id: 'stage5', name: '⑤ 关系深化', group: 'stage' }
     ],
     links: [
-      { source: 'content', target: 'stage1', value: 8 },
-      { source: 'scene', target: 'stage2', value: 7 },
+      { source: 'content', target: 'stage2', value: 8 },
+      { source: 'scene', target: 'stage1', value: 7 },
       { source: 'product', target: 'stage3', value: 4 },
       { source: 'product', target: 'stage4', value: 6 },
       { source: 'rights', target: 'stage5', value: 5 }
